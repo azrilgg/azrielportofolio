@@ -251,16 +251,9 @@ header.scrolled {
 
 /* Enhanced Home Section */
 .home {
-    min-height: 100vh; /* layar penuh */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* tengah horizontal */
-    width: 100%; /* pastiin full */
-    padding: 0 !important; /* hapus padding bawaan .section */
-    margin: 0 !important;  /* hapus margin tambahan */
-    background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
-    position: relative;
-    overflow: hidden;
+background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+position: relative;
+overflow: hidden;
 }
 
 .home::before {
