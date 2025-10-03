@@ -486,15 +486,7 @@ header.scrolled {
     animation: fadeInScale 1s ease forwards 0.5s;
 }
 
-.profile-image {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: var(--shadow-card);
-    transition: var(--transition-smooth);
-    border: 3px solid var(--glass-border);
-}
+
 
 .profile-image:hover {
     transform: scale(1.02);
