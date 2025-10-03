@@ -250,10 +250,12 @@ header.scrolled {
 }
 
 /* Enhanced Home Section */
+
 .home {
 background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
 position: relative;
 overflow: hidden;
+    
 }
 
 .home::before {
@@ -274,7 +276,7 @@ overflow: hidden;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 6rem;
     align-items: center;
-    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 1;
