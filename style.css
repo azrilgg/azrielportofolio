@@ -410,6 +410,7 @@ header.scrolled {
     background: transparent;
     color: var(--text-primary);
     border: 2px solid var(--glass-border);
+    text-decoration: none;
 }
 
 .hire-btn:hover {
@@ -422,9 +423,6 @@ header.scrolled {
     color: var(--accent-primary);
 }
 
-a.hire-btn.secondary {
-  text-decoration: none;
-}
 .social-links {
     display: flex;
     gap: 1rem;
