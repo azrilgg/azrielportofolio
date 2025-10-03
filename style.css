@@ -484,8 +484,13 @@ header.scrolled {
     position: relative;
     opacity: 0;
     animation: fadeInScale 1s ease forwards 0.5s;
+
+    display: flex;               /* aktifkan flexbox */
+    justify-content: center;     /* taruh di tengah horizontal */
+    align-items: center;         /* taruh di tengah vertical */
 }
 
+/* Foto default ukuran desktop */
 .profile-image {
     width: 400px;
     height: 500px;
@@ -496,6 +501,17 @@ header.scrolled {
     border: 3px solid var(--glass-border);
 }
 
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .profile-image {
+      width: 80%;   /* biar ikut layar HP */
+      height: auto; /* proporsional */
+  }
+
+  .image-container {
+      justify-content: center; /* tengah di HP */
+  }
+}
 
 .profile-image:hover {
     transform: scale(1.02);
