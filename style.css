@@ -251,6 +251,9 @@ header.scrolled {
 
 /* Enhanced Home Section */
 .home {
+    min-height: 100vh; /* layar penuh */
+    display: flex;
+    align-items: center; /* biar konten rata tengah vertikal */
     background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
     position: relative;
     overflow: hidden;
