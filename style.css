@@ -8,8 +8,8 @@
     --text-muted: #666666;
     --accent-primary: #00d4ff;
     --accent-secondary: #0099cc;
-    --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #00bfea 0%, #0088bb 100%);
+    --accent-gradient: linear-gradient(135deg, #FFD700 0%, #FFB000 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #E6BE2E 0%, #B8860B 100%);
     --border-accent: rgba(0, 212, 255, 0.15);
     --shadow-glow: 0 0 60px rgba(0, 212, 255, 0.15);
     --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
