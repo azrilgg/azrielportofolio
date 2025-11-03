@@ -409,7 +409,7 @@ overflow: hidden;
 }
 
 .hire-btn.secondary {
-    background: transparent;
+    background: var(--accent-gradient);
     color: var(--text-primary);
     border: 2px solid var(--glass-border);
     text-decoration: none;
