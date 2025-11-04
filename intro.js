@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     intro.style.opacity = "0";
     setTimeout(() => {
-  
+      window.location.href = "index.html";
     }, 800);
   }, 3200);
 });
