@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle, #000 0%, #111 100%);
+  background: radial-gradient(circle, #000000, #111111);
   color: #fff;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -14,7 +14,8 @@ body {
 
 #intro-section {
   text-align: center;
-  animation: fadeIn 1.5s ease-in forwards;
+  opacity: 1;
+  transition: opacity 0.8s ease;
 }
 
 .intro-icon {
@@ -25,12 +26,11 @@ body {
 
 .intro-title {
   font-size: 3rem;
-  letter-spacing: 4px;
   margin: 0.5rem 0;
   background: linear-gradient(135deg, #FFD700, #FFA500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeUp 2s ease-in-out;
+  letter-spacing: 3px;
 }
 
 .intro-subtitle {
@@ -40,11 +40,10 @@ body {
   animation: fadeIn 2s ease-in 1s forwards;
 }
 
-/* Progress bar bawah */
 .progress-bar {
   width: 0;
-  height: 3px;
-  margin-top: 2rem;
+  height: 4px;
+  margin-top: 1.5rem;
   background: linear-gradient(90deg, #FFD700, #FFA500);
   border-radius: 2px;
   animation: loadBar 3s ease-in-out forwards;
@@ -52,11 +51,6 @@ body {
 
 /* Animations */
 @keyframes fadeIn {
-  0% { opacity: 0; transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes fadeUp {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
