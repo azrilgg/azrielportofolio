@@ -1,23 +1,25 @@
-// === Golden Intro Script (FIXED) ===
+// === Golden Intro Script (FINAL FIX) ===
 document.addEventListener("DOMContentLoaded", () => {
   const intro = document.getElementById("intro-section");
 
+  // Pastikan elemen ada
   if (!intro) {
-    console.error("❌ Elemen #intro-section tidak ditemukan!");
+    alert("⚠️ Elemen intro-section tidak ditemukan!");
     return;
   }
 
-  // Pastikan intro mulai terlihat
-  intro.style.opacity = "1";
-  intro.style.transition = "opacity 0.8s ease";
+  console.log("✅ Intro dimulai...");
 
-  // Setelah 3 detik, mulai fade out dan redirect
+  // Delay animasi progress bar
   setTimeout(() => {
     intro.style.opacity = "0";
+    console.log("🎬 Fade-out mulai...");
 
-    // Setelah fade-out selesai, pindah ke index.html utama
+    // Setelah fade out selesai, redirect
     setTimeout(() => {
+      console.log("➡️ Pindah ke index.html");
       window.location.href = "index.html";
     }, 800);
-  }, 3000);
+
+  }, 3200);
 });
