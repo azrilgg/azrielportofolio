@@ -531,14 +531,21 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// === INTRO DELUXE SCRIPT ===
+// === INTRO DELUXE SCRIPT (FIXED) ===
 document.addEventListener("DOMContentLoaded", () => {
   const intro = document.getElementById("intro-section");
-
   if (!intro) return;
 
-  // Durasi intro (3 detik tampil + fade out)
+  // Jalankan animasi loading bar otomatis (3 detik)
+  const duration = 3200; // total durasi loading
+
+  // Setelah 3.2 detik → fade out intro
   setTimeout(() => {
     intro.classList.add("hidden");
-  }, 3000);
+
+    // Setelah animasi fade out selesai (CSS transition 1s)
+    setTimeout(() => {
+      intro.remove(); // hapus elemen biar ga ganggu tampilan utama
+    }, 1000);
+  }, duration);
 });
