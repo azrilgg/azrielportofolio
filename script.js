@@ -530,3 +530,15 @@ if ('serviceWorker' in navigator) {
         //     .catch(error => console.log('SW registration failed'));
     });
 }
+
+// === INTRO DELUXE SCRIPT ===
+document.addEventListener("DOMContentLoaded", () => {
+  const intro = document.getElementById("intro-section");
+
+  if (!intro) return;
+
+  // Durasi intro (3 detik tampil + fade out)
+  setTimeout(() => {
+    intro.classList.add("hidden");
+  }, 3000);
+});
