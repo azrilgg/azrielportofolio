@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: 'fixed',
             top: '20px',
             right: '20px',
-            background: type === 'info' ? 'var(--accent-primary)' : '#10b981',
+            background: type === 'info' ? '#FFD700' : '#10b981',
             color: 'white',
             padding: '1rem 1.5rem',
             borderRadius: '12px',
