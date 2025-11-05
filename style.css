@@ -1641,3 +1641,47 @@ overflow: hidden;
   to { width: 100%; }
     }
 
+/* === RESPONSIVE FIX FOR MOBILE VIEW === */
+#intro-section {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #000000, #0a0a0a, #000000);
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease, visibility 1s ease;
+  touch-action: none; /* cegah zoom / geser */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: contain; /* biar gak mental pas di-scroll */
+}
+
+@media (max-width: 768px) {
+  .intro-logo {
+    font-size: 3rem;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .loading-bar {
+    width: 180px;
+    height: 5px;
+  }
+}
