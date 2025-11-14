@@ -554,3 +554,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000); // durasi fade out
   }, duration);
 });
+
+
+// ScrollReveal Setup
+const sr = ScrollReveal({
+    distance: "40px",
+    duration: 800,
+    easing: "ease-out",
+    origin: "bottom",
+    reset: false,   // animasi tidak mengulang saat scroll naik
+});
+
+// =======================
+// SKILLS SECTION
+// =======================
+sr.reveal('#skills .section-title', { delay: 100 });
+sr.reveal('#skills .skills-grid', { delay: 200 });
+sr.reveal('#skills .skill-category', { interval: 150 });
+
+// =======================
+// SERVICES SECTION
+// =======================
+sr.reveal('#service .section-title', { delay: 100 });
+sr.reveal('#service .service-card', { interval: 150 });
+
+// =======================
+// PROJECTS SECTION
+// =======================
+sr.reveal('#project .section-title', { delay: 100 });
+sr.reveal('#project .project-card', { interval: 150 });
+
+// =======================
+// CONTACT SECTION
+// =======================
+sr.reveal('#contact .section-title', { delay: 100 });
+sr.reveal('#contact .contact-item', { interval: 150 });
+sr.reveal('#contact .contact-form', { delay: 300 });
