@@ -3244,4 +3244,62 @@ button {
     .lux-orbit span {
         transform: rotateY(calc(var(--i) * 90deg)) translateZ(80px);
     }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: auto;
+    padding-top: 120px;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .image-frame {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-visual {
+    order: -1;
+    margin-bottom: 40px;
+  }
+
+  .title-line {
+    font-size: 3rem;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  /* ===== GRID FIX ===== */
+  .hero-content,
+  .about-content,
+  .skills-grid,
+  .services-grid,
+  .projects-grid,
+  .contact-content,
+  .psv-grid,
+  .lux-music-grid {
+    grid-template-columns: 1fr !important;
+  }
+
 }
